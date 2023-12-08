@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+  </head>
+  <body>
+    <div
+      class="container"
+      style="display: grid; align-items: center; justify-content: center"
+    >
+      <form action="" onsubmit="addTable()">
+        <fieldset>
+          <!-- Deatils -->
+          <legend id="">Registration Form</legend>
+          <label for="">
+            First Name:
+            <input type="text" placeholder="Enter First Name" id="fname" />
+          </label>
+          <label for="">
+            Last Name:
+            <input type="text" placeholder="Enter Last Name" id="lname" />
+          </label>
+          <label for=""> Date of Birth: <input type="date" id="dob" /> </label>
+          <label for="">
+            Address:
+            <input type="textfield" placeholder="Enter Address" id="address" />
+          </label>
+
+          <!-- State -->
+          <label for="">
+            State :
+            <select name="" id="state">
+              <option>Select State</option>
+              <option>Maharashtra</option>
+              <option>Goa</option>
+              <option>Telangana</option>
+              <option>Kerala</option>
+            </select>
+          </label>
+
+          <!-- Education -->
+          <div class="education" id="education">
+            <label>Education :</label>
+            <label for="ssc"><input type="checkbox" value="SSC" name="education" id="ssc" />SSC</label>
+            <label for="hsc"><input type="checkbox" value="HSC" name="education" id="hsc" />HSC</label> 
+            <label for="grad"><input type="checkbox" value="GRAD" name="education" id="grad" />Grad</label> 
+            <label for="pg"><input type="checkbox" value="PG" name="education" id="pg" />PG</label>
+            <label for="phd"><input type="checkbox" value="PHD" name="education" id="phd" />PHD</label>
+          </div>
+
+          <!-- Genders -->
+          <div class="genders" id="genders">
+            <label>Gender :</label>
+            <label for="male"
+              ><input type="radio" value="Male" id="male" name="genders" />Male</label
+            >
+            <label for="female"
+              ><input type="radio" value="Female" id="female" name="genders" />Female</label
+            >
+            <label for="others"
+              ><input type="radio" value="Others" id="others" name="genders" />Others</label
+            >
+          </div>
+
+          <div class="buttons">
+            <button type="submit" id="submit-btn" onclick="addTable()">Submit</button>
+            <button type="reset" id="reset-btn">Reset</button>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+
+    <div
+      class="result"
+      style="
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        padding: 6px;
+        margin: 3px;
+      "
+    >
+      <legend>Result Table</legend>
+      <table border="2">
+        <thead>
+          <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Address</th>
+            <th>State</th>
+            <th>Education</th>
+            <th>Gender</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr id="tbody"></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <script src=".\main.js"></script>
+  </body>
+</html>
