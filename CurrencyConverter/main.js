@@ -1,9 +1,14 @@
+//Calculation
 function calculate() {
   //Input from UI
   var f = parseInt(document.getElementById("fr").value);
   var t = parseInt(document.getElementById("to").value);
   var amount = parseInt(document.getElementById("amt").value);
   var result = 0;
+  // console.log(amount);
+  // console.log(f);
+  // console.log(t);
+  // console.log(result);
 
   switch (f) {
     case 1: {

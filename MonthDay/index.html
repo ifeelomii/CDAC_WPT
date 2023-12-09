@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MonthDay</title>
+    <style>
+      .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border:2px solid black;
+        width: auto;
+      }
+
+      .container-month{
+        border:2px solid black;
+        margin: 3px;
+        padding: 15px;
+      }
+
+      .container-week{
+        border:2px solid black;
+        margin: 3px;
+        padding: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="container-month">
+        <select id="month" onchange="showmonth()">
+          Month :
+          <option value="selet">Select</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+        </select>
+        <p>The Month is : <span id="spm"></span> </p>
+      </div>
+
+      <div class="container-week">
+        <select name="" id="week" onchange="showweek()">
+          Week :
+          <option value="selcet">Select</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+        </select>
+        <p>The WeekDay is : <span id="spw"></span> </p>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>

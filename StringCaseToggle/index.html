@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StringCaseToggle</title>
+</head>
+<body>
+    <div class="container" style="display: grid; align-items: center; justify-content: center;">
+        <label for="input">Enter String : <input type="text" id="input" ></label>
+        <br><br>
+        <label for="uc"><input type="radio" name="Case" id="uc" value="1" onclick="uCase()">Upper Case</label>
+        <label for="lc"><input type="radio" name="Case" id="lc" value="2" onclick="lCase()">Lower Case</label>
+        <label for="tc"><input type="radio" name="Case" id="tc" value="3" onclick="tCase()">Title Case</label>
+        <label for="cc"><input type="radio" name="Case" id="cc" value="4" onclick="cCase()">Capital Case</label>
+        <br><br>
+        <p id="result"> </p>
+    </div>
+
+
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<html>
+  <head>
+    <h3>REGISTRATION FORM</h3>
+  </head>
+    <label>Enter Name:<input type="text" placeholder="Enter name" id="name"/></label
+    ><br /><br />
+    <label>Enter DOB:<input type="date" id="date"/></label
+    ><br /><br />
+    <label>Enter Address:<textarea rows="5" cols="10" id="address"></textarea></label
+    ><br /><br />
+    <label
+      >Enter City:<select id="city">
+        <option value="Pune">Pune</option>
+        <option value="Kolhapur">Kolhapur</option>
+        <option value="Nagpur">Nagpur</option>
+        <option value="Mumbai">Mumbai</option>
+        <option value="Beed">Beed</option>
+      </select></label
+    ><br /><br />
+    <label>Enter Education:</label>
+    <label><input type="checkbox" value="ssc" id="SSC"/>SSC</label>
+    <label><input type="checkbox" value="hsc" id="HSC"/>HSC</label>
+    <label><input type="checkbox" value="grad" id="GRAD"/>Graduation</label>
+    <label><input type="checkbox" value="pg" id="PG"/>Post Graduation</label>
+    <br>
+    <label>Enter your gender:</label>
+    <label><input type="radio" name="gender" value="M" id="m"/>Male</label>
+    <label><input type="radio" name="gender" value="F" id="f"/>Female</label>
+    <label><input type="radio" name="gender" value="T" id="t"/>Others</label>
+    <br>
+    <button value="submit" id="smt-btn" onclick="addTable()">SUBMIT</button>
+    <button value="reset" id="rst-btn">RESET</button>
+    <table border="1" cellspacing="5" cellpadding="5">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Address</th>
+                <th>City</th>
+                <th>Education</th>
+                <th>Gender</th>
+            </tr>
+        </thead>
+        <tbody id="tbody">
+        </tbody>
+    </table>
+    <script src="main.js"></script>
+  </body>
+</html>

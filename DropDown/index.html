@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DropDown</title>
+    <style>
+      #container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      pre{
+        display: grid;
+          align-items: center;
+          justify-content: center;
+          border: 2px solid black;
+          width: 50%;
+          margin-top: 15%;
+      }
+
+      #mr-3{
+        margin-bottom: 3px;
+      }
+      #mr-2{
+        top:3px;
+        padding : 2px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <pre>
+        <label for="n1" id="mr-3">Enter First Number  :<input type="number" id="n1" id="mr-3" id="mr-2" >
+        </label>
+        <label for="n2" id="mr-3">Enter Second Number :<input type="number" id="n2" id="mr-3">
+        </label>
+
+        <label>Select Operation</label>
+        <select id="opr" onchange="calculate()" id="mr-3" >
+            <option >Select</option>
+            <option >+</option>
+            <option >-</option>
+            <option >*</option>
+            <option >/</option>
+        </select>
+        <p>Result is : <span id="sp"></span> </p>
+    </pre>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
