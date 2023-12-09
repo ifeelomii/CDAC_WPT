@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mr/Mrs</title>
+    <style>
+      .container {
+        display: grid;
+        align-items: center;
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <label for="fname">First Name : <input type="text" id="fname" /></label>
+      <br />
+      <label for="lname">Last Name : <input type="text" id="lname" /></label>
+      <br />
+      <label>Genders :</label>
+      <label for="male">Male : <input type="radio" name="gender" id="male" onclick="male()"/></label>
+      <label for="female">Female : <input type="radio" name="gender" id="female" onclick="female()"/></label>
+      <br />
+      <br>
+      <p id="display"></p>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>

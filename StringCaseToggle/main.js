@@ -18,7 +18,7 @@ function tCase() {
 function cCase(){
     let str = document.getElementById("input").value;
     let strarr = str.split(" ");
-    // console.log(strarr);
+    console.log(strarr);
     var resarr=[];
     var i=0;
     strarr.forEach(e => {
@@ -26,13 +26,20 @@ function cCase(){
         let str2= e.substring(1).toLowerCase();
         let res = str1 + str2;
         resarr[i] = res;
-        // console.log(resarr[i])
+        console.log(resarr[i])
         i++;
     });
     var string="";
-    resarr.forEach(e => {
-        string = string+" "+e;
-    });
-    // console.log(string);
+
+    // string = resarr.pop();
+    for(let i=0;i<resarr.length;i++){
+      if(i==0){
+        string=resarr[i];
+      }
+      else{
+        string = string+" "+resarr[i];
+      }
+    };
+    console.log(string);
     document.getElementById("result").innerHTML ="<span>"+ string +"</span>";
 }
