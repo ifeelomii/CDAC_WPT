@@ -1,0 +1,17 @@
+body {
+  background-color: rgb(222, 217, 210, 0.4);
+}
+.abs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  display: grid;
+  margin-top: 10px;
+  width: 500px;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 3px;
+}
